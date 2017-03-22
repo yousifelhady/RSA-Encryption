@@ -1,0 +1,23 @@
+This is a C++ console program.
+The program starts with a black window and ask user to enter 3 consecutive values (P, Q, E)
+where P and Q are used to determine the value of N and Phi
+where N = P*Q and Phi = (P-1)*(Q-1)
+E is the public key of encryption
+
+Then, the program compute internally the value of N and Phi and D
+where D = E^-1 mod Phi
+
+Then the program ask user to enter one of the following commands:
+1. IsPPrime: checks whether the entered value of P is prime or not
+2. IsQPrime: check whether the entered value of Q is prime or not
+3. PrintN: print the value of N
+4. PrintPhi: print the value of Phi
+5. PrintD: print the value of D
+6. EncryptPublic=<message_to_be_encrypted>: encrypt the message between <> and print its cipher using the public key "E"
+7. EncryptPrivate=<message_to_be_encrypted>: encrypt the message between <> and print its cipher using the private key "D"
+8. Quit: terminate the program
+
+Note that, the program is case sensitive. i.e.: the commands should be entered with upper and lower case letters and written.
+
+Note on RSA:
+RSA is an encryption technique used to deal with big numbers (512 bits and more).
